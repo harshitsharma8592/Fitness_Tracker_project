@@ -1,0 +1,167 @@
+/* src/App.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure full viewport height */
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  flex: 1; /* Allow app to grow to fill remaining space */
+  overflow: auto; /* Enable vertical scrolling when content exceeds viewport */
+}
+
+.main-content {
+  width: 100%;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px auto; /* Center content horizontally */
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+input {
+  margin: 5px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px;
+  background-color: #5cb85c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #4cae4c;
+}
+
+nav {
+  background: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+  justify-content: center; /* Center links horizontally */
+  align-items: center; /* Center links vertically */
+}
+
+nav ul li {
+  display: inline-flex;
+  align-items: center; /* Center text vertically within list items */
+}
+
+nav ul li a,
+nav ul li button {
+  color: #fff;
+  text-decoration: none;
+  background: none;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font: inherit;
+  display: inline-block;
+  text-align: center; /* Center text horizontally */
+  height: 100%; /* Ensure height fills parent */
+}
+
+nav ul li a:hover,
+nav ul li button:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  background: #34495e;
+  color: #fff;
+  padding: 20px; /* Equal padding from all sides */
+  text-align: center;
+  width: 96%;
+  left: 20px;
+  border-radius: 5px;
+  height: 10%;
+}
+
+/* styles.css */
+
+/* Light mode styles */
+/* Light mode styles */
+body.light-mode {
+  background-color: white;
+  color: black;
+}
+
+button.light-mode {
+  background-color: #f0f0f0;
+  color: black;
+}
+
+input.light-mode,
+textarea.light-mode,
+select.light-mode {
+  background-color: #f9f9f9;
+  color: black;
+}
+
+label.light-mode {
+  color: black; /* Ensure labels are visible in light mode */
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #121212; /* Dark background for the body */
+  color: white; /* Light text color for the body */
+}
+
+button.dark-mode {
+  background-color: #333; /* Dark button background */
+  color: white; /* Light text color for buttons */
+}
+
+input.dark-mode,
+textarea.dark-mode,
+select.dark-mode {
+  background-color: #1f1f1f; /* Dark input background */
+  color: white; /* Light text color for inputs */
+}
+
+label.dark-mode {
+  color: white; /* Ensure labels are visible in dark mode */
+}
+
+/* Navbar specific styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.navbar button {
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+}
